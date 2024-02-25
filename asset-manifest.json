@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/KrishiDoot-HackMol5/static/css/main.f57fae82.css",
+    "main.js": "/KrishiDoot-HackMol5/static/js/main.2afbe930.js",
+    "static/media/CropRecom.png": "/KrishiDoot-HackMol5/static/media/CropRecom.8e1a2973543a041d3f08.png",
+    "static/media/logo-krishiDoot.png": "/KrishiDoot-HackMol5/static/media/logo-krishiDoot.3decb93c280e85b03398.png",
+    "static/media/moon.png": "/KrishiDoot-HackMol5/static/media/moon.9e57e95270c62c99e30a.png",
+    "static/media/Home_Page.jpg": "/KrishiDoot-HackMol5/static/media/Home_Page.f99c061af63318af2902.jpg",
+    "static/media/home-img.png": "/KrishiDoot-HackMol5/static/media/home-img.dbf035dba6a08cab594b.png",
+    "static/media/sun.png": "/KrishiDoot-HackMol5/static/media/sun.e4a3d712eb97905a3ce1.png",
+    "static/media/footerBg.png": "/KrishiDoot-HackMol5/static/media/footerBg.c348c1bedb0ad9d9a5b0.png",
+    "static/media/sms.png": "/KrishiDoot-HackMol5/static/media/sms.c222102b99385c92dabc.png",
+    "static/media/help-desk.png": "/KrishiDoot-HackMol5/static/media/help-desk.89d59eed5e3ac937cba1.png",
+    "static/media/phone-call.png": "/KrishiDoot-HackMol5/static/media/phone-call.d35848942c955a6232b3.png",
+    "static/media/Fertilizer.jpeg": "/KrishiDoot-HackMol5/static/media/Fertilizer.974be482d2081839cf5b.jpeg",
+    "index.html": "/KrishiDoot-HackMol5/index.html",
+    "main.f57fae82.css.map": "/KrishiDoot-HackMol5/static/css/main.f57fae82.css.map",
+    "main.2afbe930.js.map": "/KrishiDoot-HackMol5/static/js/main.2afbe930.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f57fae82.css",
+    "static/js/main.2afbe930.js"
+  ]
+}
