@@ -1,0 +1,14 @@
+.background-image {
+    background-image: url("../img/home-img.png");
+    background-size:40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+}
+.main-section{
+    display: flex;
+}
+.main-section-left{
+    min-width: 40vw;
+}

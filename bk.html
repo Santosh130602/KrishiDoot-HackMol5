@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #weather-info {
+      /* text-align: center; */
+      margin-top: 50px;
+      display: flex;
+    }
+    #weather-icon {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="weather-info">
+    <h1>Loading...</h1>
+    <img id="weather-icon" src="" alt="Weather Icon">
+    <p id="weather-description"></p>
+    <p id="location"></p>
+    <p id="country"></p>
+  </div>
+
+  <script>
+    navigator.geolocation.getCurrentPosition(success, error);
+
+    function success(position) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      const apiKey = 'd1845658f92b31c64bd94f06f7188c9c';
+      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          const weatherIcon = document.getElementById('weather-icon');
+          const weatherDescription = document.getElementById('weather-description');
+          const location = document.getElementById('location');
+          const country = document.getElementById('country');
+
+          weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+          weatherDescription.textContent = `${data.weather[0].main} - ${data.main.temp}°C`;
+          location.textContent = `Location: ${data.name}`;
+          country.textContent = `Country: ${data.sys.country}`;
+        })
+        .catch(error => console.log('Error fetching weather data:', error));
+    }
+
+    function error() {
+      const weatherInfo = document.getElementById('weather-info');
+      weatherInfo.innerHTML = '<h1>Unable to retrieve weather information.</h1>';
+    }
+  </script>
+</body>
+</html>

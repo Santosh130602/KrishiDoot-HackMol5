@@ -1,0 +1,7 @@
+#weather-info{
+    display: flex;
+    color: rgb(237, 227, 227);
+}
+.weather-ele{
+    margin-left: 25px;
+}
